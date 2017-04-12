@@ -1,7 +1,6 @@
+===============
 Interstate Wars
+===============
 
-Project for Data Visualisation
-
-================
+Project for the minor: Data Visualization
 by Rick Bergmans
-================
