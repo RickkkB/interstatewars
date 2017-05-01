@@ -371,6 +371,16 @@ h3 {
   font-weight: 700;
   color: white;
 }
+.xAxis {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+.yAxis {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
 body {
   background-color: #C2C2C2;
 }
@@ -403,5 +413,15 @@ a:hover {
 }
 .explore-title {
   text-align: center;
-  margin: 20px auto;
+  margin: 20px auto 10px;
+}
+#chart {
+  float: left;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+#chart::-webkit-scrollbar {
+  width: 0 !important;
 }
