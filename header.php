@@ -11,6 +11,7 @@
 
     <script src="js/main.min.js"></script>
     <script src="js/vendors/d3.min.js"></script>
+    <script src="js/vendors/d3-tooltip.js"></script>
     <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
     <script src="js/vendors/jquery-1.11.2.min.js"></script>
     <script src="js/vendors/bootstrap.min.js"></script>

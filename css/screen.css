@@ -364,12 +364,18 @@ h1 {
 }
 h2 {
   font-size: 2em;
+  font-weight: 700;
   color: white;
 }
 h3 {
   font-size: 1.5em;
-  font-weight: 700;
   color: white;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 700;
 }
 .xAxis {
   font-family: 'Assistant', sans-serif;
@@ -379,7 +385,7 @@ h3 {
 .yAxis {
   font-family: 'Assistant', sans-serif;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
 }
 body {
   background-color: #C2C2C2;
@@ -397,6 +403,9 @@ a:hover {
   left: 10%;
   color: white;
 }
+#title-container h3 {
+  max-width: 500px;
+}
 #click-trough {
   position: absolute;
   bottom: 5%;
@@ -408,12 +417,50 @@ a:hover {
   width: 100vw;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/bg.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/bg.jpg);
+  -webkit-filter: grayscale(100%);
   background-size: cover;
   background-position: bottom;
 }
 .explore-title {
   text-align: center;
   margin: 20px auto 10px;
+}
+.explore-bg {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-linear-gradient(rgba(194, 194, 194, 0.9), rgba(194, 194, 194, 0.9)), url(../img/bg2.jpg);
+  background: linear-gradient(rgba(194, 194, 194, 0.9), rgba(194, 194, 194, 0.9)), url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.warInfo {
+  height: 100%;
+  background: #cecece;
+  position: fixed;
+  right: 0;
+  width: 300px;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  -webkit-transition: all 600ms ease;
+          transition: all 600ms ease;
+}
+.warInfo #specificWarInfo {
+  padding: 20px 20px 0px 20px;
+}
+.warInfo.isOpen {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.closeButton {
+  width: 40px;
+  float: right;
+  margin: 10px 10px 0 0;
+}
+.closeButton .close-x {
+  stroke: white;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 5;
 }
 #chart {
   float: left;
