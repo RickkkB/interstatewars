@@ -131,7 +131,6 @@ function visualize() {
             })
         })
         .on("click", function(d) {
-
             $(".warInfo").addClass("isOpen")
             $("#specificWarInfo").remove()
             $(".warInfo").append("<div id='specificWarInfo'><h2>" +d.warName + "</h2>" + "<h3>Started at " + d.startMonth + "-" + d.startDay + "-" + d.startYear + " and lasted " + d.days + " days.<p></p>" +"The war has a total of " + d.battleDeaths + " battle deaths, with an average of " + d.deathsPerDay + " fallen soldiers per day." + "</h3></div>");
