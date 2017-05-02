@@ -467,7 +467,7 @@ a:hover {
   float: left;
   width: 100%;
   overflow-x: scroll;
-  overflow-y: visible;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 #chart::-webkit-scrollbar {

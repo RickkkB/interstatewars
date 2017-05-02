@@ -1,5 +1,8 @@
 /* hier komt de javascript (en D3!) code */
-var HEIGHT = $(window).height() *0.82;
+var HEIGHT = $(window).height() * 0.80;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ var HEIGHT = $(window).height() * 0.70;
+}
 var WIDTH = $(window).innerWidth() * 4;
 var MARGIN = 3;
 
