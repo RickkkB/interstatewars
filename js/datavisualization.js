@@ -38,7 +38,7 @@ var y = d3.scaleLinear()
 //
 // console.log(ryScale);
 
-d3.json("../assets/interstatewars.json", function(dataFromFile) {
+d3.json("./assets/interstatewars.json", function(dataFromFile) {
   warData = dataFromFile;
   showData = dataFromFile;
 
