@@ -112,6 +112,7 @@ function visualize() {
               return normalizedValue;
           }
         })
+        .style("cursor", "pointer")
         .on("mouseover", function() {
             d3.select(this)
             .transition()
@@ -149,7 +150,7 @@ function visualize() {
     // Add the X Axis
     g.append("g")
         .attr("class", "xAxis")
-        .attr("transform", "translate(0," + 20 + ")")
+        .attr("transform", "translate(-100," + 20 + ")")
         .call(d3.axisTop(timescale)
              .tickFormat(d3.timeFormat("%Y")))
         .attr("stroke-opacity", "0.2")

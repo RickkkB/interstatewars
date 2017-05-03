@@ -456,6 +456,7 @@ a:hover {
   width: 40px;
   float: right;
   margin: 10px 10px 0 0;
+  cursor: pointer;
 }
 .closeButton .close-x {
   stroke: white;
